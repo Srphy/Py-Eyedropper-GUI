@@ -42,6 +42,7 @@ def clip3():
 while True:
     pos = pg.position()
     posxy = str(pos)
+    posxy = posxy[6:-1]
     s = pg.screenshot(region=(pos[0] - size/2, pos[1] - size/2, size, size))
 
     im = cv2.cvtColor(np.array(s), cv2.COLOR_RGB2BGR)  # Color space inversion
