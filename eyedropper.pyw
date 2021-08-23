@@ -65,7 +65,7 @@ while True:
 
     im = cv2.rectangle(im, (st, st), (ed, ed), (0, 0, 0), 2)
 
-    cv2.imshow("Srphy's Eyedropper", im)
+    im = cv2.imshow("Srphy's Eyedropper", im)
     capture()
 
     k = cv2.waitKey(1)
